@@ -1,12 +1,36 @@
-nav, .film-title-container, footer {
+/* nav, .film-title-container, footer {
     background-color: #3A5279;
-}
+} */
 
-nav a:hover {
-    color: #CEDFE3;
-}
 
-#featured-films-container, #all-films-container {
+#featured-films-container, #all-films-container, #copyright-container {
     padding-left: 22rem;
     padding-right: 22rem;
 }
+
+#copyright-container, input {
+    background-color: #1A2942;
+}
+
+
+/* 
+a {
+    display: inline-block;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #3A5279;
+    transition: width 0.3s ease;
+    bottom: 0;
+    right: 0;
+    width: 0;
+}
+
+a:hover::after {
+    left: 0;
+    width: 100%;
+} */
