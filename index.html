@@ -24,97 +24,96 @@
       <div class="flex flex-row gap-x-6 lg:hidden">
         <!-- HAMBURGER NAVBAR and search -->
 
-          <!-- drawer init and show -->
-          <button class="bg-transparent text-white inline-block" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-          </button>
-          <!-- drawer component -->
-          <div id="drawer-navigation" class="fixed top-0 left-0 z-50 h-screen overflow-y-auto transition-transform -translate-x-full bg-white w-1/2 text-black" tabindex="-1" aria-labelledby="drawer-navigation-label">
-            <p id="drawer-navigation-label" class="px-5 py-2 text-xl font-semibold">Menu</p>
-            <div class="flex flex-col text-sm">
-              <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
-                <a class="" href=""><span>SHOP</span></a>
-              </div>
-              <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
-                <a class="" href=""><span>FILMOGRAPHY</span></a>
-              </div>
-              <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
-                <a class="" href=""><span>IN THEATERS</span></a>
-              </div>
-              <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
-                <a class="" href=""><span>ABOUT</span></a>
-              </div>
-
-              <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
-                <a class="flex flex-row items-center" href="">
-                  <span class="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false" role="presentation" class="w-[2em] h-[2em]">
-                      <path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 16 8 C 13.25 8 11 10.25 11 13 C 11 14.515625 11.707031 15.863281 12.78125 16.78125 C 10.53125 17.949219 9 20.300781 9 23 L 11 23 C 11 20.226563 13.226563 18 16 18 C 18.773438 18 21 20.226563 21 23 L 23 23 C 23 20.300781 21.46875 17.949219 19.21875 16.78125 C 20.292969 15.863281 21 14.515625 21 13 C 21 10.25 18.75 8 16 8 Z M 16 10 C 17.667969 10 19 11.332031 19 13 C 19 14.667969 17.667969 16 16 16 C 14.332031 16 13 14.667969 13 13 C 13 11.332031 14.332031 10 16 10 Z"></path>
-                    </svg>
-                  </span>
-                  <span class="ml-[5px]">Sign In</span></a>
-              </div>
-
-              <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
-                <a class="flex flex-row items-center" href="">
-                  <span class="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" class="w-[2em] h-[2em]"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M10.11,15.67H2.16a1.1,1.1,0,0,1-.26,0,.67.67,0,0,1-.56-.8,7.32,7.32,0,0,1,3.86-5,7.16,7.16,0,0,1,5.08-.58,8.49,8.49,0,0,1,1.39.49.66.66,0,0,0,.9-.49.67.67,0,0,0-.42-.74c-.3-.14-.61-.26-.93-.39l.28-.24a4.25,4.25,0,0,0,1-1.35,4.42,4.42,0,0,0,.15-3.68A4.47,4.47,0,0,0,9.7.16C9.44.09,9.18.08,8.93,0h-.1s0,0-.06,0S8.71,0,8.7,0H8.3s0,0-.07,0-.05,0-.06,0H8a2.44,2.44,0,0,1-.39.05,4.5,4.5,0,0,0-3.17,2.4A4.32,4.32,0,0,0,4,5.07a4.56,4.56,0,0,0,.58,1.72A4.41,4.41,0,0,0,5.58,8c.12.11.12.11,0,.17a8.5,8.5,0,0,0-1.19.54,8.39,8.39,0,0,0-2.49,2,8.13,8.13,0,0,0-1.88,4v.56c0,.12,0,.25.07.37A2,2,0,0,0,1.73,17h8.6s.08,0,.12-.05a.66.66,0,0,0,.35-.87A.67.67,0,0,0,10.11,15.67ZM5.31,4.52A3.19,3.19,0,1,1,8.55,7.7,3.2,3.2,0,0,1,5.31,4.52Z"></path><path d="M16.17,13.18c-.49,0-1,0-1.49,0-.15,0-.18,0-.17-.19V11.43a.79.79,0,0,0-.06-.34.66.66,0,0,0-1.27.27v1.69c0,.11,0,.14-.13.13H11.42a.82.82,0,0,0-.34.06.68.68,0,0,0-.38.72.66.66,0,0,0,.64.55H13c.14,0,.19,0,.19.17,0,.5,0,1,0,1.49a.75.75,0,0,0,.53.83H14a.64.64,0,0,0,.58-.68V14.77c0-.2,0-.21.21-.21H16.3A.65.65,0,0,0,17,14v-.27A.75.75,0,0,0,16.17,13.18Z"></path><path class="cls-1" d="M8.23,0H8.17a.07.07,0,0,0,.06,0Z"></path><path class="cls-1" d="M8.23,0h0a.07.07,0,0,1-.06,0S8.21,0,8.23,0Z"></path><path class="cls-2" d="M8.25,0s0,0,.05,0H8.23Z"></path><path class="cls-2" d="M8.24,0h0s.06,0,.07,0,0,0-.05,0Z"></path><path class="cls-2" d="M8.23,0h0l0,0V0Z"></path><path class="cls-2" d="M8.24,0h0Z"></path><path class="cls-2" d="M8.77,0V0H8.7a.08.08,0,0,0,.07,0Z"></path><path class="cls-2" d="M8.77,0h0A.08.08,0,0,1,8.7,0S8.74,0,8.77,0Z"></path><path class="cls-1" d="M8.78,0s0,0,.05,0H8.77Z"></path><path class="cls-1" d="M8.78,0h0s.05,0,.06,0,0,0-.05,0Z"></path><path class="cls-1" d="M8.78,0V0Z"></path><path class="cls-1" d="M8.78,0Z"></path></g></g></svg>
-                  </span>
-                  <span class="ml-[5px]">Create an Account</span>
-                </a>
-              </div>
-
-              <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
-                <a class="flex flex-row items-center" href="">
-                  <span>
-                    <svg class="w-[2em] h-[2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.92 18"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M5.6,0A5.62,5.62,0,0,0,0,5.6,4.81,4.81,0,0,0,.93,8.26a7,7,0,0,0,.91,1.1l8.08,8.1.54.54.54-.54,8.07-8.1A5.69,5.69,0,0,0,20.92,5.6,5.62,5.62,0,0,0,15.32,0a6.82,6.82,0,0,0-4.86,2.19A6.82,6.82,0,0,0,5.6,0Zm0,1.49c2.24,0,4.3,2.18,4.3,2.18l.56.63L11,3.67s2.06-2.18,4.3-2.18a4.12,4.12,0,0,1,4.1,4.11c0,1.16-1.4,2.71-1.4,2.71l-7.56,7.57L2.89,8.31a6,6,0,0,1-.72-.89A3.64,3.64,0,0,1,1.49,5.6,4.13,4.13,0,0,1,5.6,1.49Z"></path></g></g></svg>
-                  </span>
-                  <span class="ml-[5px]">My Wish List</span>
-                </a>
-              </div>
+        <!-- drawer init and show -->
+        <button class="bg-transparent text-white inline-block" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+        <!-- drawer component -->
+        <div id="drawer-navigation" class="fixed top-0 left-0 z-50 h-screen overflow-y-auto transition-transform -translate-x-full bg-white w-1/2 text-black" tabindex="-1" aria-labelledby="drawer-navigation-label">
+          <p id="drawer-navigation-label" class="px-5 py-2 text-xl font-semibold">Menu</p>
+          <div class="flex flex-col text-sm">
+            <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
+              <a class="" href=""><span>SHOP</span></a>
+            </div>
+            <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
+              <a class="" href=""><span>FILMOGRAPHY</span></a>
+            </div>
+            <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
+              <a class="" href=""><span>IN THEATERS</span></a>
+            </div>
+            <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
+              <a class="" href=""><span>ABOUT</span></a>
+            </div>
+            <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
+              <a class="flex flex-row items-center" href="">
+                <span class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false" role="presentation" class="w-[2em] h-[2em]">
+                    <path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 16 8 C 13.25 8 11 10.25 11 13 C 11 14.515625 11.707031 15.863281 12.78125 16.78125 C 10.53125 17.949219 9 20.300781 9 23 L 11 23 C 11 20.226563 13.226563 18 16 18 C 18.773438 18 21 20.226563 21 23 L 23 23 C 23 20.300781 21.46875 17.949219 19.21875 16.78125 C 20.292969 15.863281 21 14.515625 21 13 C 21 10.25 18.75 8 16 8 Z M 16 10 C 17.667969 10 19 11.332031 19 13 C 19 14.667969 17.667969 16 16 16 C 14.332031 16 13 14.667969 13 13 C 13 11.332031 14.332031 10 16 10 Z"></path>
+                  </svg>
+                </span>
+                <span class="ml-[5px]">Sign In</span>
+              </a>
             </div>
 
-            
-            <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-black bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center" >
-              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-              </svg>
-              <span class="sr-only">Close menu</span>
-            </button>
+            <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
+              <a class="flex flex-row items-center" href="">
+                <span class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" class="w-[2em] h-[2em]"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M10.11,15.67H2.16a1.1,1.1,0,0,1-.26,0,.67.67,0,0,1-.56-.8,7.32,7.32,0,0,1,3.86-5,7.16,7.16,0,0,1,5.08-.58,8.49,8.49,0,0,1,1.39.49.66.66,0,0,0,.9-.49.67.67,0,0,0-.42-.74c-.3-.14-.61-.26-.93-.39l.28-.24a4.25,4.25,0,0,0,1-1.35,4.42,4.42,0,0,0,.15-3.68A4.47,4.47,0,0,0,9.7.16C9.44.09,9.18.08,8.93,0h-.1s0,0-.06,0S8.71,0,8.7,0H8.3s0,0-.07,0-.05,0-.06,0H8a2.44,2.44,0,0,1-.39.05,4.5,4.5,0,0,0-3.17,2.4A4.32,4.32,0,0,0,4,5.07a4.56,4.56,0,0,0,.58,1.72A4.41,4.41,0,0,0,5.58,8c.12.11.12.11,0,.17a8.5,8.5,0,0,0-1.19.54,8.39,8.39,0,0,0-2.49,2,8.13,8.13,0,0,0-1.88,4v.56c0,.12,0,.25.07.37A2,2,0,0,0,1.73,17h8.6s.08,0,.12-.05a.66.66,0,0,0,.35-.87A.67.67,0,0,0,10.11,15.67ZM5.31,4.52A3.19,3.19,0,1,1,8.55,7.7,3.2,3.2,0,0,1,5.31,4.52Z"></path><path d="M16.17,13.18c-.49,0-1,0-1.49,0-.15,0-.18,0-.17-.19V11.43a.79.79,0,0,0-.06-.34.66.66,0,0,0-1.27.27v1.69c0,.11,0,.14-.13.13H11.42a.82.82,0,0,0-.34.06.68.68,0,0,0-.38.72.66.66,0,0,0,.64.55H13c.14,0,.19,0,.19.17,0,.5,0,1,0,1.49a.75.75,0,0,0,.53.83H14a.64.64,0,0,0,.58-.68V14.77c0-.2,0-.21.21-.21H16.3A.65.65,0,0,0,17,14v-.27A.75.75,0,0,0,16.17,13.18Z"></path><path class="cls-1" d="M8.23,0H8.17a.07.07,0,0,0,.06,0Z"></path><path class="cls-1" d="M8.23,0h0a.07.07,0,0,1-.06,0S8.21,0,8.23,0Z"></path><path class="cls-2" d="M8.25,0s0,0,.05,0H8.23Z"></path><path class="cls-2" d="M8.24,0h0s.06,0,.07,0,0,0-.05,0Z"></path><path class="cls-2" d="M8.23,0h0l0,0V0Z"></path><path class="cls-2" d="M8.24,0h0Z"></path><path class="cls-2" d="M8.77,0V0H8.7a.08.08,0,0,0,.07,0Z"></path><path class="cls-2" d="M8.77,0h0A.08.08,0,0,1,8.7,0S8.74,0,8.77,0Z"></path><path class="cls-1" d="M8.78,0s0,0,.05,0H8.77Z"></path><path class="cls-1" d="M8.78,0h0s.05,0,.06,0,0,0-.05,0Z"></path><path class="cls-1" d="M8.78,0V0Z"></path><path class="cls-1" d="M8.78,0Z"></path></g></g></svg>
+                </span>
+                <span class="ml-[5px]">Create an Account</span>
+              </a>
+            </div>
+
+            <div class="px-5 py-3 border-b-2 border-[#E6E6E6]">
+              <a class="flex flex-row items-center" href="">
+                <span>
+                  <svg class="w-[2em] h-[2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.92 18"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M5.6,0A5.62,5.62,0,0,0,0,5.6,4.81,4.81,0,0,0,.93,8.26a7,7,0,0,0,.91,1.1l8.08,8.1.54.54.54-.54,8.07-8.1A5.69,5.69,0,0,0,20.92,5.6,5.62,5.62,0,0,0,15.32,0a6.82,6.82,0,0,0-4.86,2.19A6.82,6.82,0,0,0,5.6,0Zm0,1.49c2.24,0,4.3,2.18,4.3,2.18l.56.63L11,3.67s2.06-2.18,4.3-2.18a4.12,4.12,0,0,1,4.1,4.11c0,1.16-1.4,2.71-1.4,2.71l-7.56,7.57L2.89,8.31a6,6,0,0,1-.72-.89A3.64,3.64,0,0,1,1.49,5.6,4.13,4.13,0,0,1,5.6,1.49Z"></path></g></g></svg>
+                </span>
+                <span class="ml-[5px]">My Wish List</span>
+              </a>
+            </div>
           </div>
 
-          <div class="inline-block">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="fill-white w-5 h-5 transform -scale-x-100"><path d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z"></path></svg>
-          </div>
+          <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-black bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center" >
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+        </div>
+
+        <div class="inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="fill-white w-5 h-5 transform -scale-x-100"><path d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z"></path></svg>
+        </div>
       </div>
 
-        <!-- NORMAL LEFT -->
-        <!-- MOBILE MID -->
-        <div class="lg:flex lg:gap-x-8 items-center">
-          <img class="inline-block" src="images/StudioGhibliCollectionLogo_6_300x.avif">
-          <!-- anchor tags normal -->
-          <div class="hidden lg:flex gap-x-2 lg:gap-x-8 items-center">
-            <a class="" href="">
-              <span class="inline-block relative hover:text-[#D1E1E6] after:content-[''] after:absolute after:h-[2px] after:bg-[#D1E1E6] after:right-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">SHOP</span>
-            </a>
-            <a class="" href="">
-              <span class="inline-block relative hover:text-[#D1E1E6] after:content-[''] after:absolute after:h-[2px] after:bg-[#D1E1E6] after:right-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">FILMOGRAPHY</span>
-            </a>
-            <a class="" href="">
-              <span class="inline-block relative hover:text-[#D1E1E6] after:content-[''] after:absolute after:h-[2px] after:bg-[#D1E1E6] after:right-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">IN THEATERS</span>
-            </a>
-            <a class="" href="">
-              <span class="inline-block relative hover:text-[#D1E1E6] after:content-[''] after:absolute after:h-[2px] after:bg-[#D1E1E6] after:right-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">ABOUT</span>
-            </a>
-          </div>
+      <!-- NORMAL LEFT -->
+      <!-- MOBILE MID -->
+      <div class="lg:flex lg:gap-x-8 items-center">
+        <img class="inline-block" src="images/StudioGhibliCollectionLogo_6_300x.avif">
+        <!-- anchor tags normal -->
+        <div class="hidden lg:flex gap-x-2 lg:gap-x-8 items-center">
+          <a class="" href="">
+            <span class="inline-block relative hover:text-[#D1E1E6] after:content-[''] after:absolute after:h-[2px] after:bg-[#D1E1E6] after:right-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">SHOP</span>
+          </a>
+          <a class="" href="">
+            <span class="inline-block relative hover:text-[#D1E1E6] after:content-[''] after:absolute after:h-[2px] after:bg-[#D1E1E6] after:right-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">FILMOGRAPHY</span>
+          </a>
+          <a class="" href="">
+            <span class="inline-block relative hover:text-[#D1E1E6] after:content-[''] after:absolute after:h-[2px] after:bg-[#D1E1E6] after:right-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">IN THEATERS</span>
+          </a>
+          <a class="" href="">
+            <span class="inline-block relative hover:text-[#D1E1E6] after:content-[''] after:absolute after:h-[2px] after:bg-[#D1E1E6] after:right-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">ABOUT</span>
+          </a>
         </div>
+      </div>
       
       <!-- NORMAL RIGHT -->
       <!-- MOBILE RIGHT -->
       <div class="flex gap-x-6 lg:gap-x-8 items-center">
-        <!-- sign in svg -->
+        <!-- sign in svg for mobile -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false" role="presentation" class="lg:hidden fill-white w-[2em] h-[2em]">
           <path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 16 8 C 13.25 8 11 10.25 11 13 C 11 14.515625 11.707031 15.863281 12.78125 16.78125 C 10.53125 17.949219 9 20.300781 9 23 L 11 23 C 11 20.226563 13.226563 18 16 18 C 18.773438 18 21 20.226563 21 23 L 23 23 C 23 20.300781 21.46875 17.949219 19.21875 16.78125 C 20.292969 15.863281 21 14.515625 21 13 C 21 10.25 18.75 8 16 8 Z M 16 10 C 17.667969 10 19 11.332031 19 13 C 19 14.667969 17.667969 16 16 16 C 14.332031 16 13 14.667969 13 13 C 13 11.332031 14.332031 10 16 10 Z"></path>
         </svg>
@@ -135,10 +134,8 @@
             <span class="sr-only">0 items</span>
           </div>
         </a>
-        
       </div>
     </div>
-
   </nav>
 
   <main>
