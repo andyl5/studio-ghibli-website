@@ -2,7 +2,11 @@
 
 function setCarouselHeight() {
   const img = new Image()
-  img.src = "images/SPIRITEDAWAY_DESKTOP_C_3.webp";
+  if (window.innerWidth <= 768) {
+    img.src = "images/HOME-HERO-BUNDLES-MOB_3.webp"
+  } else {
+    img.src = "images/SPIRITEDAWAY_DESKTOP_C_3.webp";
+  }
   const carousel = document.getElementById("carousel")
   aspectRatio = img.width / img.height
   console.log('ratio', aspectRatio)
