@@ -9,10 +9,7 @@ function setCarouselHeight() {
   }
   const carousel = document.getElementById("carousel")
   aspectRatio = img.width / img.height
-  console.log('ratio', aspectRatio)
-  console.log('Window width', window.innerWidth)
   carouselHeight = window.innerWidth/aspectRatio
-  console.log(carouselHeight)
   carousel.style.height = `${carouselHeight}px`
 }
 
